@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46f13b52-38a8-419a-a6cf-607be25825d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/model/Hand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/model/card/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/model/card/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/model/card/Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/model/card/Suit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/view/CardView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/view/DeckView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/balint/cardgame/view/HandView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/balint/cardgame/view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/10_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/7_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/8_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/9_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/ace_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/king_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/lower_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/acorns/upper_of_acorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/10_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/7_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/8_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/9_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/ace_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/king_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/lower_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/bells/upper_of_bells.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/10_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/7_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/8_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/9_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/ace_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/king_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/lower_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/hearts/upper_of_hearts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/10_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/7_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/8_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/9_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/ace_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/king_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/lower_of_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pictures/leaves/upper_of_leaves.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2flytoOvI6Oswu1qeXMxXUCGIba" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Deck.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ImageViewExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/36309/Desktop/CodeCool/OOP/SP2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.balint.cardgame.view" />
+      <recent name="com.balint.cardgame.model" />
+      <recent name="com.balint.cardgame.model." />
+      <recent name="com.balint.cardgame.model.card" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\36309\Desktop\CodeCool\card-game\src\main\resources\pictures\cards\acorns" />
+      <recent name="C:\Users\36309\Desktop\CodeCool\card-game\src\main\java\com\balint\cardgame\view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.balint.cardgame" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="Application" factoryName="Application">
+      <envs>
+        <env name="resourcesPath" value="C:\\Users\\36309\\Desktop\\CodeCool\\card-game\\src\\main\\resources\\pictures\\" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.balint.cardgame.Application" />
+      <module name="card-game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46f13b52-38a8-419a-a6cf-607be25825d1" name="Changes" comment="" />
+      <created>1714390178115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714390178115</updated>
+      <workItem from="1714390179490" duration="8677000" />
+      <workItem from="1714401000255" duration="2954000" />
+      <workItem from="1714405379132" duration="665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/balint/cardgame/ImageViewExample.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
