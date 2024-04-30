@@ -30,7 +30,7 @@ public class DeckView extends VBox {
         int row = 0;
         int col = 0;
         for (Card card : deck.getCards()) {
-            CardView cardView = new CardView(card.getName());
+            CardView cardView = new CardView(card);
             gridPane.add(cardView, col, row);
             col++;
             if (col == 4) {

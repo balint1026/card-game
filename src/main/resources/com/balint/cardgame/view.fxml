@@ -4,10 +4,15 @@
 <?import javafx.scene.control.Button?>
 
 <?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.control.Label?>
+<?import com.balint.cardgame.view.Scoreboard?>
 <BorderPane fx:id="rootPane"
             xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.balint.cardgame.Controller">
+            fx:controller="com.balint.cardgame.logic.Controller">
+
+
 
     <center>
         <GridPane alignment="CENTER">
@@ -15,8 +20,18 @@
         </GridPane>
     </center>
 
+    <top>
+        <Button text="Play cards" onAction="#handlePlayCardsButton"/>
+    </top>
+
     <bottom>
-        <Button text="Shuffle Deck" onAction="#shuffleDeck"/>
+        <Button text="Reset" onAction="#shuffleDeck"/>
     </bottom>
+
+    <right>
+        <GridPane alignment="BASELINE_RIGHT">
+            <com.balint.cardgame.view.Scoreboard fx:id="scoreboard" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        </GridPane>
+    </right>
 
 </BorderPane>

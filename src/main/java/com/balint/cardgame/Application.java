@@ -6,6 +6,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Application extends javafx.application.Application {
 
@@ -14,8 +15,9 @@ public class Application extends javafx.application.Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view.fxml"));
         BorderPane root = fxmlLoader.load();
 
-        Scene scene = new Scene(root, 320, 240);
-        stage.setTitle("Card game");
+        Scene scene = new Scene(root, 800, 600);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
+        stage.setTitle("Hit the score");
         stage.setScene(scene);
         stage.show();
     }
