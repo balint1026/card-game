@@ -37,5 +37,26 @@ public class Hand {
     public List<Card> getCards() {
         return cards;
     }
+
+    public List<Card> getClickedCards() {
+        List<Card> clickedCards = new ArrayList<>();
+        for (Card card : cards){
+            if (card.isClicked()){
+                clickedCards.add(card);
+            }
+        }
+        return clickedCards;
+    }
+
+
+    public int getScore(){
+        int score = 0;
+        for (Card card : cards){
+            if (card.isClicked()) score +=   card.getRank().getScore();
+        }
+        return score;
+    }
+
+
 }
 

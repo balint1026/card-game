@@ -1,7 +1,9 @@
 package com.balint.cardgame.view;
 
+import com.balint.cardgame.model.card.Card;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,9 +15,10 @@ import java.util.Objects;
 
 public class CardView extends ImageView {
 
-    private static final int CARD_WIDTH = 80; // Adjust as needed
-    private static final int CARD_HEIGHT = 120; // Adjust as needed
+    private static final int CARD_WIDTH = 80;
+    private static final int CARD_HEIGHT = 120;
 
+    private Card card;
     private static final Map<String, String> cardImageMap = new HashMap<>();
 
     static {
@@ -56,20 +59,26 @@ public class CardView extends ImageView {
         cardImageMap.put("ACE_OF_LEAVES", "ace_of_leaves.png");
     }
 
-    public CardView(String cardName) {
+    public CardView(Card card) {
         super();
-        String suit = cardName.split("_")[2];
-        String imageName = cardImageMap.get(cardName);
+        this.card = card;
+        String suit = card.getName().split("_")[2];
+        String imageName = cardImageMap.get(card.getName());
+
+        getStyleClass().add(".card-view");
+        card.clickedProperty().addListener((obs, oldValue, newValue) -> updateStyle());
 
         if (imageName != null) {
             String imagePath = System.getenv("resourcesPath") + suit.toLowerCase() + "/" + imageName;
-            System.out.println("Constructed file path: " + imagePath);
             try {
                 File file = new File(imagePath);
                 if (file.exists()) {
                     setImage(new Image(new FileInputStream(file)));
                     setFitWidth(CARD_WIDTH);
                     setFitHeight(CARD_HEIGHT);
+                    setOnMouseEntered(this::handleMouseEnter);
+                    setOnMouseExited(this::handleMouseExit);
+                    setOnMouseClicked(this::handleMouseClick);
                 } else {
                     System.err.println("Image file does not exist: " + imagePath);
                 }
@@ -77,7 +86,34 @@ public class CardView extends ImageView {
                 System.err.println("Failed to load image: " + e.getMessage());
             }
         } else {
-            System.err.println("Image name not found: " + cardName);
+            System.err.println("Image name not found: " + card.getName());
+        }
+    }
+
+    private void handleMouseClick(MouseEvent event) {
+        card.setClicked(!isClicked());
+        updateStyle();
+    }
+
+    private void handleMouseEnter(MouseEvent event) {
+        setFitWidth(CARD_WIDTH * 1.25);
+        setFitHeight(CARD_HEIGHT * 1.25);
+    }
+
+    private void handleMouseExit(MouseEvent event) {
+        setFitWidth(CARD_WIDTH);
+        setFitHeight(CARD_HEIGHT);
+    }
+
+    public boolean isClicked() {
+        return card.isClicked();
+    }
+
+    private void updateStyle() {
+        if (card.isClicked()) {
+            getStyleClass().add("clicked");
+        } else {
+            getStyleClass().remove("clicked");
         }
     }
 }
